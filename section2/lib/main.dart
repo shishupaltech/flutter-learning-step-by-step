@@ -34,14 +34,37 @@ class MyHomePage extends StatelessWidget {
       ),
       body: SafeArea(
         child: Container(
-          padding: EdgeInsets.all(20),
+          color: Colors.blue,
           height: double.infinity,
           width: double.infinity,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20.0),
-            color: Colors.red,
+
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                height: 80,
+                width: 50,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20.0),
+                  color: Colors.red,
+                ),
+                child: Text('Hello'),
+              ),
+              Container(
+                padding: EdgeInsets.all(20),
+                height: 80,
+                width: 50,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20.0),
+                  color: Colors.red,
+                ),
+                child: Text('Hello'),
+              ),
+            ],
           ),
-          child: Text('Hello'),
         ),
       ),
     );
