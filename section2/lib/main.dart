@@ -32,11 +32,18 @@ class MyHomePage extends StatelessWidget {
         title: Text('Hello my first app'),
         backgroundColor: Colors.blueGrey,
       ),
-      body: Stack(
-        children: [
-          Image.asset('assets/images/menyoga1.jpeg',fit: BoxFit.cover,height: 300,),
-          SizedBox(height: 300, child: Center(child: Text('My Images'))),
-        ],
+      body: Padding(
+        padding: EdgeInsets.all(10.0),
+        child: Stack(
+          children: [
+            Image.asset(
+              'assets/images/menyoga1.jpeg',
+              fit: BoxFit.cover,
+              height: 300,
+            ),
+            SizedBox(height: 300, child: Center(child: Text('My Images'))),
+          ],
+        ),
       ),
     );
   }
