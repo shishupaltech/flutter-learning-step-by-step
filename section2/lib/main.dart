@@ -32,7 +32,17 @@ class MyHomePage extends StatelessWidget {
         title: Text('Hello my first app'),
         backgroundColor: Colors.blueGrey,
       ),
-      body: Text('Hello'),
+      body: SafeArea(
+        child: Container(
+          color: Colors.red,
+          height: 50.0,
+          width: double.infinity,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20.0),
+          ),
+          child: Text('Hello'),
+        ),
+      ),
     );
   }
 }
