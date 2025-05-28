@@ -32,41 +32,17 @@ class MyHomePage extends StatelessWidget {
         title: Text('Hello my first app'),
         backgroundColor: Colors.blueGrey,
       ),
-      body: Center(
-        child: Container(
-          color: Colors.blue,
-          
-
-          child: Row(
-           
-            mainAxisSize: MainAxisSize.min,
-           
-
-            children: [
-              Container(
-                padding: EdgeInsets.all(20),
-                height: 100,
-                width: 100,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20.0),
-                  color: Colors.red,
-                ),
-                child: Center(child: Text('Hello')),
-              ),
-              Container(
-                padding: EdgeInsets.all(20),
-                height: 100,
-                width: 100,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20.0),
-                  color: Colors.red,
-                ),
-                child: Center(child: Text('Hello')),
-              ),
-            ],
-          ),
-        ),
-      ),
+      // body: Image.network(
+      //   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxW2gvtCFH3lQJFmjp3NuoydvBgsFqV04POg&s',
+      //   height: double.infinity,
+      //   // fit: BoxFit.contain,
+      //   // fit: BoxFit.cover,
+      //   // fit: BoxFit.fill,
+      //   // fit: BoxFit.fitHeight,
+      //   // fit: BoxFit.fitWidth,
+      //   // fit: BoxFit.scaleDown,
+      // ),
+      body: Image.asset('assets/images/menyoga1.jpeg'),
     );
   }
 }
