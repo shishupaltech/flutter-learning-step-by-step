@@ -32,21 +32,15 @@ class MyHomePage extends StatelessWidget {
         title: Text('Hello my first app'),
         backgroundColor: Colors.blueGrey,
       ),
-      body: SafeArea(
+      body: Center(
         child: Container(
           color: Colors.blue,
-          height: double.infinity,
+          
 
           child: Row(
-            // mainAxisAlignment: MainAxisAlignment.end,
-            // mainAxisAlignment: MainAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.center,
-            // mainAxisAlignment: MainAxisAlignment.spaceAround,
-            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            // mainAxisSize: MainAxisSize.min,
-            // cross axisalignment works in row when row having maximum height then it will workay in row
-            crossAxisAlignment: CrossAxisAlignment.center,
+           
+            mainAxisSize: MainAxisSize.min,
+           
 
             children: [
               Container(
@@ -57,7 +51,7 @@ class MyHomePage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20.0),
                   color: Colors.red,
                 ),
-                child: Text('Hello'),
+                child: Center(child: Text('Hello')),
               ),
               Container(
                 padding: EdgeInsets.all(20),
@@ -67,7 +61,7 @@ class MyHomePage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20.0),
                   color: Colors.red,
                 ),
-                child: Text('Hello'),
+                child: Center(child: Text('Hello')),
               ),
             ],
           ),
