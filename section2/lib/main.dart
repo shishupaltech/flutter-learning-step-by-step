@@ -33,18 +33,18 @@ class MyHomePage extends StatelessWidget {
         title: Text('Hello my first app'),
         leading: Icon(Icons.notification_add,color: Colors.blueGrey,),
       ),
-      body: Padding(
-        padding: EdgeInsets.all(10.0),
-        child: Stack(
-          children: [
-            Image.asset(
-              'assets/images/menyoga1.jpeg',
-              fit: BoxFit.cover,
-              height: 300,
-            ),
-            SizedBox(height: 300, child: Center(child: Text('My Images'))),
-          ],
-        ),
+      body: Stack(
+        children: [
+         
+          SizedBox(height: 300, child: Center(child: Text('My Images'))),
+          ListTile(
+            leading: Icon(Icons.accessibility_new_rounded),
+            tileColor: Colors.amber,
+            title: Text('Done'),
+            trailing: Text('bahut khub'),
+            onTap: (){print('yes working');},
+          )
+        ],
       ),
     );
   }
