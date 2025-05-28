@@ -36,17 +36,23 @@ class MyHomePage extends StatelessWidget {
         child: Container(
           color: Colors.blue,
           height: double.infinity,
-          width: double.infinity,
 
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.end,
-            mainAxisSize: MainAxisSize.min,
+          child: Row(
+            // mainAxisAlignment: MainAxisAlignment.end,
+            // mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            // mainAxisAlignment: MainAxisAlignment.spaceAround,
+            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            // mainAxisSize: MainAxisSize.min,
+            // cross axisalignment works in row when row having maximum height then it will workay in row
+            crossAxisAlignment: CrossAxisAlignment.center,
+
             children: [
               Container(
                 padding: EdgeInsets.all(20),
-                height: 80,
-                width: 50,
+                height: 100,
+                width: 100,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20.0),
                   color: Colors.red,
@@ -55,8 +61,8 @@ class MyHomePage extends StatelessWidget {
               ),
               Container(
                 padding: EdgeInsets.all(20),
-                height: 80,
-                width: 50,
+                height: 100,
+                width: 100,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20.0),
                   color: Colors.red,
