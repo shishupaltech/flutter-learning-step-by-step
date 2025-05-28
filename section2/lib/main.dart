@@ -32,17 +32,12 @@ class MyHomePage extends StatelessWidget {
         title: Text('Hello my first app'),
         backgroundColor: Colors.blueGrey,
       ),
-      // body: Image.network(
-      //   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxW2gvtCFH3lQJFmjp3NuoydvBgsFqV04POg&s',
-      //   height: double.infinity,
-      //   // fit: BoxFit.contain,
-      //   // fit: BoxFit.cover,
-      //   // fit: BoxFit.fill,
-      //   // fit: BoxFit.fitHeight,
-      //   // fit: BoxFit.fitWidth,
-      //   // fit: BoxFit.scaleDown,
-      // ),
-      body: Image.asset('assets/images/menyoga1.jpeg'),
+      body: Stack(
+        children: [
+          Image.asset('assets/images/menyoga1.jpeg',fit: BoxFit.cover,height: 300,),
+          SizedBox(height: 300, child: Center(child: Text('My Images'))),
+        ],
+      ),
     );
   }
 }
