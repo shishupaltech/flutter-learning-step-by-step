@@ -29,8 +29,9 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor:Theme.of(context).colorScheme.inversePrimary,
         title: Text('Hello my first app'),
-        backgroundColor: Colors.blueGrey,
+        leading: Icon(Icons.notification_add,color: Colors.blueGrey,),
       ),
       body: Padding(
         padding: EdgeInsets.all(10.0),
