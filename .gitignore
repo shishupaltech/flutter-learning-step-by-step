@@ -1,0 +1,7 @@
+**/build/
+**/.dart_tool/
+**/.idea/
+**/.vscode/
+**/.packages
+**/ios/Flutter/Flutter.framework
+.DS_Store
