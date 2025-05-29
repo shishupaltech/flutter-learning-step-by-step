@@ -12,8 +12,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme:ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal,brightness: Brightness.dark)) ,
-      // this Materail app is the starting point from where we will start our application and it is called theme of our app
-      // theme color will reflect until we will not use any widget inside the home   
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Section 3'),// it is used to give title for the appbar to tell some thing about the section of app
+          centerTitle: false, // this is used to take title left corner of appbar
+          leading: Icon(Icons.person),// show the content left corner of appbar
+          // action is used to show mutliple things together in right side
+          actions: [
+
+            Text('Login'),
+            
+            Text('Signup'),
+          ],
+          backgroundColor: Colors.teal,
+        ),
+      ),  
     );
   }
 }
