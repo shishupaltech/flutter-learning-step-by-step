@@ -20,13 +20,20 @@ class MyApp extends StatelessWidget {
           // action is used to show mutliple things together in right side
           actions: [
 
-            Text('Login'),
-            
-            Text('Signup'),
+           Padding(padding:EdgeInsets.all(16.0),child: Row(
+            spacing: 4,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Text('Login'),
+              Text('Signup'),
+            ],
+           ))
           ],
           backgroundColor: Colors.teal,
         ),
+        // bottomNavigationBar: ,
       ),  
+      
     );
   }
 }
