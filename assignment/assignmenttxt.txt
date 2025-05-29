@@ -1,6 +1,0 @@
-create one ui part which shows the hello word which having the ui part of it.
-1 first part is easy 
-2. create ui part
-3. think first 
-4. develop now 
-5. done from myside.

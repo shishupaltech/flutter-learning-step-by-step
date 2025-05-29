@@ -33,19 +33,16 @@ class MyHomePage extends StatelessWidget {
         title: Text('Hello my first app'),
         leading: Icon(Icons.notification_add,color: Colors.blueGrey,),
       ),
-      body: Stack(
+      // wrap is used wrap means break the content in second line 
+      body: Wrap(
         children: [
-         
-          SizedBox(height: 300, child: Center(child: Text('My Images'))),
-          ListTile(
-            leading: Icon(Icons.accessibility_new_rounded),
-            tileColor: Colors.amber,
-            title: Text('Done'),
-            trailing: Text('bahut khub'),
-            onTap: (){print('yes working');},
-          )
+          Text('slskdlskdlsksldsksldksldksldkslsskddddddddddddddddddddddddd'),
+          Text('slskdlskdlsk'),
+          Text('slskdlskdlsk'),
+          Text('slskdlskdlsk'),
+          Text('slskdlskdlsk'),
         ],
-      ),
+      )
     );
   }
 }
